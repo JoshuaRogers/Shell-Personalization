@@ -1,4 +1,3 @@
-" Enable automatic indenting
 set autoindent
 set smartindent
 
@@ -43,10 +42,13 @@ filetype plugin indent on
 set autochdir
 
 " Show line numbers
-" set number
-" set numberwidth=4
+set number
+set numberwidth=5
 
 " Ruby, use 2 spaces
 au BufRead,BufNewFile *.rb,*.rhtml set shiftwidth=2
 au BufRead,BufNewFile *.rb,*.rhtml set softtabstop=2
+
+" Set default color scheme
+colorscheme wombat
 
