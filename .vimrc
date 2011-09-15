@@ -1,6 +1,9 @@
 " Install pathogen.  Makes installing plugins easier.
 call pathogen#infect()
 
+" Add a shortcut to toggle NERDTree: CTRL-n
+nmap <silent> <c-n> :NERDTreeToggle<CR>
+
 " Setup indenting
 set autoindent
 set smartindent
