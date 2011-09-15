@@ -1,3 +1,7 @@
+" Install pathogen.  Makes installing plugins easier.
+call pathogen#infect()
+
+" Setup indenting
 set autoindent
 set smartindent
 
@@ -51,4 +55,3 @@ au BufRead,BufNewFile *.rb,*.rhtml set softtabstop=2
 
 " Set default color scheme
 colorscheme wombat
-
