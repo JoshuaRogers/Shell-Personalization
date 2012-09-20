@@ -57,4 +57,4 @@ au BufRead,BufNewFile *.rb,*.rhtml set shiftwidth=2
 au BufRead,BufNewFile *.rb,*.rhtml set softtabstop=2
 
 " Set default color scheme
-colorscheme wombat
+colorscheme molokai
