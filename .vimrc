@@ -58,3 +58,4 @@ au BufRead,BufNewFile *.rb,*.rhtml set softtabstop=2
 
 " Set default color scheme
 colorscheme molokai
+set t_Co=256
