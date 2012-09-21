@@ -64,3 +64,6 @@ set t_Co=256
 nmap sj :SplitjoinJoin<CR>
 nmap sk :SplitjoinSplit<CR>
 
+" Maps F5 to the undo tree.
+nnoremap <F5> :GundoToggle<CR>
+

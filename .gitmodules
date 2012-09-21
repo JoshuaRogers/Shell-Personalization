@@ -13,3 +13,6 @@
 [submodule "bundle/splitjoin"]
 	path = bundle/splitjoin
 	url = git://github.com/AndrewRadev/splitjoin.vim.git
+[submodule "bundle/gundo"]
+	path = bundle/gundo
+	url = https://github.com/sjl/gundo.vim.git
