@@ -59,3 +59,8 @@ au BufRead,BufNewFile *.rb,*.rhtml set softtabstop=2
 " Set default color scheme
 colorscheme molokai
 set t_Co=256
+
+" Added sj and sk for SplitJoin and SplitSplit (respectively)
+nmap sj :SplitjoinJoin<CR>
+nmap sk :SplitjoinSplit<CR>
+
