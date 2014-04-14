@@ -20,6 +20,10 @@ echo 'loading submodules'
 git submodule init
 git submodule update
 
+echo 'customize configuration'
+vim ~/.bin/config.bash
+
 # Load the profile
 echo 'loading profile'
 source ~/.bash_profile
+
