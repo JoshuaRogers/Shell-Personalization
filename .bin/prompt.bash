@@ -113,9 +113,14 @@ function git_branch_name {
 
 function format_user_host {
   local username=$(whoami)
-  local username_color=${LGREY}
-  [ "${username}" == "root" ] && username_color=${RED}
-  echo "${username_color}${username}${LGREY}@$(hostname -s)"
+  local username_color=${LCYAN}
+  local hostname=${PRETTY_HOSTNAME}
+  local hostname_color=${LCYAN}
+
+  [ "${username}" == "root" ] && username_color=${LRED}
+  [ -z "${hostname}" ] && hostname=$(hostname -s)
+  [ "${SAFE_HOST}" == "false" ] && hostname_color=${LRED}
+  echo "${username_color}${username} ${LGREY}@ ${hostname_color}${hostname}"
 }
 
 function fill_dashes {
