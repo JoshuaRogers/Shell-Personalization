@@ -19,3 +19,7 @@ ln -s `pwd`/.vimrc ~/
 echo 'loading submodules'
 git submodule init
 git submodule update
+
+# Load the profile
+echo 'loading profile'
+source ~/.bash_profile

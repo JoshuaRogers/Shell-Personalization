@@ -45,8 +45,10 @@ function format_time {
   # Strip the leading 0 if present so that bash doesn't interpret it as a base identifier.
   local now=$(date +"%H%M" | sed -e "s/^0*//g")
   local time_color=${GREEN}
-  
-  if (( $now > ${PENCILS_DOWN_TIME} || $now < ${EARLIEST_TIME})); then
+
+  if [ "$GUILT_CLOCK" == "false" ]; then
+    time_color=$GREEN
+  elif (( $now > ${PENCILS_DOWN_TIME} || $now < ${EARLIEST_TIME})); then
     time_color=$RED
   elif (( $now > ${WIND_DOWN_TIME} )); then
     time_color=$YELLOW
