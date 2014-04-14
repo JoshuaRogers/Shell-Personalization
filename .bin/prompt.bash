@@ -130,8 +130,8 @@ function fill_dashes {
   local left_dash_length=$((remaining_chars / 2))
   local right_dash_length=$((remaining_chars - left_dash_length))
   
-  local left_dashes=$(printf "%${left_dash_length}s" | tr ' ' ─ )
-  local right_dashes=$(printf "%${right_dash_length}s" | tr ' ' ─ )
+  local left_dashes=$(printf "%${left_dash_length}s" | sed 's/ /─/g' )
+  local right_dashes=$(printf "%${right_dash_length}s" | sed 's/ /─/g' )
   PS1=$(echo ${PS1} | sed -e "s:<:${left_dashes}:" -e "s:>:${right_dashes}:")
 }
 
