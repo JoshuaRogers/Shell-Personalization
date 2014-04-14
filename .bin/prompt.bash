@@ -27,7 +27,7 @@ RESET="\[\033[0m\]"      # Color reset
 BOLD="\[\033[;1m\]"      # Bold
 
 function escape_color {
-  echo $1 | sed -e "s/\\\\/\\\\\\\\\\\\/g"
+  echo $1 | sed -e "s/\\\\/\\\\\\\\/g"
 }
 
 function format_stripe {
