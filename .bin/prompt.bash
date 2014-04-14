@@ -1,11 +1,5 @@
 #!/usr/bin/env bash
 
-# Configuration
-EARLIEST_TIME=700
-WIND_DOWN_TIME=1645
-PENCILS_DOWN_TIME=1720
-# End Configuration
-
 # Colors from https://github.com/juliendidier/home-scripts/blob/master/.bash/colors
 BLACK="\[\033[0;30m\]"   # Black
 DGREY="\[\033[1;30m\]"   # Dark Gray

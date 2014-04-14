@@ -5,6 +5,7 @@
 source "$HOME/.bin/git-completion.bash"
 
 # Load the custom prompt
+source "$HOME/.bin/config.bash"
 source "$HOME/.bin/prompt.bash"
 source "$HOME/.bin/special-dates.bash"
 
