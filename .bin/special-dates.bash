@@ -28,5 +28,11 @@ function special_date_sunday_of_advent {
 function special_date_week_of_advent {
   # From 12/01, back into Nov. and find the last Thur, then go forward 3 days. 
   local week=$1
-  echo $(date -v1d -v12m -v-1d -v-thu -v+3d -v+${week}w +"%m%d")
+  if [ `uname` == 'Darwin' ]
+  then
+    echo $(date -v1d -v12m -v-1d -v-thu -v+3d -v+${week}w +"%m%d")
+  else
+    echo "0000"
+  fi
 }
+
