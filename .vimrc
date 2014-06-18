@@ -60,3 +60,8 @@ set t_Co=256
 " Maps F5 to the undo tree.
 nnoremap <F5> :GundoToggle<CR>
 
+" Make the status bar show up.
+set laststatus=2
+
+" Used for branching icons.
+let g:airline_powerline_fonts = 1
