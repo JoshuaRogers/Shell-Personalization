@@ -39,9 +39,6 @@ set hlsearch
 " Highlight according to syntax
 syntax enable
 
-" Convert tabs to spaces
-set expandtab
-
 " Load filetype plugins/indent settings
 filetype plugin indent on
 
@@ -59,10 +56,6 @@ au BufRead,BufNewFile *.rb,*.rhtml set softtabstop=2
 " Set default color scheme
 colorscheme molokai
 set t_Co=256
-
-" Added sj and sk for SplitJoin and SplitSplit (respectively)
-nmap sj :SplitjoinJoin<CR>
-nmap sk :SplitjoinSplit<CR>
 
 " Maps F5 to the undo tree.
 nnoremap <F5> :GundoToggle<CR>
