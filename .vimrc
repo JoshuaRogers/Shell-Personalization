@@ -2,7 +2,7 @@
 call pathogen#infect()
 
 " Add a shortcut to toggle NERDTree: CTRL-n
-nmap <silent> <c-n> :NERDTreeToggle<CR>
+nmap <silent> <c-e> :NERDTreeToggle<CR>
 
 " Setup indenting
 set autoindent
