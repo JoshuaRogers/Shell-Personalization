@@ -65,3 +65,6 @@ set laststatus=2
 
 " Used for branching icons.
 let g:airline_powerline_fonts = 1
+
+" Syntax checkers for syntastic
+let g:syntastic_python_checkers = ['python']
