@@ -49,10 +49,6 @@ set autochdir
 set number
 set numberwidth=5
 
-" Ruby, use 2 spaces
-au BufRead,BufNewFile *.rb,*.rhtml set shiftwidth=2
-au BufRead,BufNewFile *.rb,*.rhtml set softtabstop=2
-
 " Set default color scheme
 colorscheme molokai
 set t_Co=256
@@ -68,3 +64,5 @@ let g:airline_powerline_fonts = 1
 
 " Syntax checkers for syntastic
 let g:syntastic_python_checkers = ['python']
+
+set pastetoggle=<F10>
