@@ -50,8 +50,9 @@ set number
 set numberwidth=5
 
 " Set default color scheme
-colorscheme molokai
 set t_Co=256
+set background=dark
+colorscheme solarized
 
 " Maps F5 to the undo tree.
 nnoremap <F5> :GundoToggle<CR>
