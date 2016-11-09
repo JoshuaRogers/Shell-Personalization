@@ -67,3 +67,9 @@ let g:airline_powerline_fonts = 1
 let g:syntastic_python_checkers = ['python']
 
 set pastetoggle=<F10>
+
+" Enable rainbvow parenthesis.
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
